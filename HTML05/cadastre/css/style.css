@@ -1,0 +1,214 @@
+@font-face {
+    font-family: "Helvetica neue";
+    src: url('../fonts/helveticaneue-thin-webfont.eot');
+    src: url('../fonts/helveticaneue-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneue-thin-webfont.woff2') format('woff2'),
+         url('../fonts/helveticaneue-thin-webfont.woff') format('woff'),
+         url('../fonts/helveticaneue-thin-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.container {
+  font-family: "Helvetica neue", Arial, sans-serif;
+  margin: 0 auto; 
+  width: 1215px;
+}
+/*clearfix*/
+.clearfix:after {
+  clear: both;
+  content: '';
+  display: block;
+}
+/*Header*/
+header {
+  background-color: #085698;  
+  height: 36px;
+}
+.menu,
+.left-menu,
+.menu div {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 36px;
+} 
+.menu {
+  float: right;
+  padding-right: 20px;
+}
+.left-menu {
+  position: relative;
+}
+.left-menu > li {
+  display: inline-block;
+  line-height: 36px;
+  text-align: center;
+  width: 70px;
+}
+.left-menu > li:first-child {
+  width: 95px;
+}
+.left-menu > li > a {
+  color: #60b5ed;
+  text-decoration: none; 
+}
+.left-menu > li:hover {
+  background-color: #4eabda;
+}
+.left-menu > li:hover a {
+  color: white;
+  font-weight: bold; 
+}
+.left-menu::after {
+  color:#60b5ed;
+  content: url(../img/line.png);
+  position: absolute;
+  right: -2px;
+  top: 2px;
+}
+#offerts {
+  text-align: center;
+  width: 170px;
+}
+#offerts a {
+  color: #fefefe;
+  text-decoration: none;
+}
+#offerts:hover {
+
+}
+#offerts:hover {
+  background: linear-gradient(to top, #52b1dd, #2e7ac4);
+  border-bottom: 1px solid #4299d2;
+  border-left: 1px solid #4299d2;
+  border-right: 1px solid #4299d2;    
+}
+#offerts:hover a {
+  color: #feffff;
+  text-decoration: underline;   
+}
+.icon {
+  vertical-align: text-bottom;
+}
+#autor {
+  color: white;
+  height: 36px;
+  text-align: center;   
+  width: 191px;
+}
+#autor > a {
+  color: #fefefe;
+  text-decoration: none;  
+}
+#autor:hover {
+  background: linear-gradient(to top, #52b1dd, #2e7ac4);
+  border-bottom: 1px solid #4299d2;
+  border-left: 1px solid #4299d2;
+  border-right: 1px solid #4299d2;    
+}
+#autor:hover a {
+  color: #feffff;
+  text-decoration: underline;
+}
+/*main*/
+main {
+  background-image: url(../img/backgr.png);
+  height: 1028px;
+  position: relative;
+}
+.my-form {
+  background-color: rgba(0, 0, 0, 0.63);
+  font-size: 14px;
+  height: 613px;
+  left: 50%;
+  margin: 0 auto;
+  margin-left: -280px;
+  margin-top: -307px;
+  position: absolute;
+  top: 50%;
+  width: 560px;
+}
+.cadastr {
+  border-bottom: 2px solid #bdc6b1;
+  color: white;
+  font-size: 24px;
+  height: 62px;
+  line-height: 62px;
+  text-align: center;
+}
+.button-fb {
+  padding-top: 36px;
+  text-align: center;
+}
+.ou-line {
+  background: url(../img/ouline.png) center no-repeat;
+  color: #999999;
+  margin: 25px 0;
+  text-align: center;
+}
+.reg-form {
+  color: #ccc;
+  height: 100%;
+  margin: 0 auto;
+  width: 275px;
+}
+.reg-form form > input[type=text],
+.reg-form form > input[type=email],
+.reg-form form > input[type=password] {
+  background-color: #0f0e0e;
+  border: 0;
+  border-bottom: 1px solid #494948;
+  color: #ccc;
+  height: 35px;
+  margin-bottom: 17px;
+  width: 100%;
+}
+input::-webkit-input-placeholder {padding-left: 17px;}
+input::-moz-placeholder          {padding-left: 17px;}
+input:-moz-placeholder           {padding-left: 17px;}
+input:-ms-input-placeholder      {padding-left: 17px;}
+.reg-form form > input[type=text]:focus,
+.reg-form form > input[type=email]:focus,
+.reg-form form > input[type=password]:focus {
+  background-color: #1b5288;
+  border: 0;
+  border-bottom: 1px solid #689bcc;
+  color: #fffbfb;
+}
+.reg-form form > input[type=text]:hover,
+.reg-form form > input[type=email]:hover,
+.reg-form form > input[type=password]:hover {
+  background-color: #1b5288;
+  border: 0;
+  border-bottom: 1px solid #689bcc;
+  box-shadow: 0px 0px 3px 2px rgba(105,155,205,1);
+}
+input:hover::-webkit-input-placeholder {color: #fffbfb;}
+input:hover::-moz-placeholder          {color: #fffbfb;}
+input:hover:-moz-placeholder           {color: #fffbfb;}
+input:hover:-ms-input-placeholder      {color: #fffbfb;}
+.reg-form form  {
+  text-align: center;  
+}
+.reg-form form > input[type=submit] {
+  background: linear-gradient(to bottom, #50aedb, #2e7ac4);
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  height: 37px;
+  margin: 18px 0;
+  width: 151px;
+}
+.reg-form form > input[type=submit]:hover {
+  background-color: #2e7ac4; 
+  cursor: pointer;
+}
+.reg-form form > input[type=submit]:focus {
+  background-color: #2e7ac4; 
+  cursor: pointer;
+}
+.reg-form p {
+  font-size: 11px;
+  text-align: center;
+  margin-left: -18px;
+  width: 311px;
+}

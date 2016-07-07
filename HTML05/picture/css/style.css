@@ -1,0 +1,34 @@
+body {
+  background-color: #fffafa;
+  margin: 125px 0;
+}
+table {
+  border: 12px solid #fffafa;
+  margin: 0 auto;
+  width: 570px;
+}
+.first-line {
+  border-top: 0;
+}
+tr {
+  height: 70px;
+}
+td {
+  border: 10px solid #000;
+  width: 70px;
+}
+.white {
+  background-color: #ffffff;
+}
+.yellow {
+  background-color: #fff87a;
+}
+.red {
+  background-color: #ff5a2f;
+}
+.black {
+  background-color: #161c1a;
+}
+.blue {
+  background-color: #054581;
+}
