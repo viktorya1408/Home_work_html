@@ -2,7 +2,7 @@ body {
   background-image: url(../img/backgr.png);
   background-repeat: repeat-x;
   font-family: Tahoma;
-  margin: 0 290px;
+  margin: 0 auto;
 }
 .container {
   box-shadow: 0px 4px 4px 1px rgba(50, 50, 50, 0.9);
@@ -27,13 +27,13 @@ h2 {
   display: block;
 }
 .left-block {
-  background: url(../img/logo.png) no-repeat bottom;
-  background-size: 100%;
+  background: url(../img/logo.png) no-repeat bottom right;
+  background-size: auto auto;
   float: left;
   height: 210px;
   margin-left: 30px;
   text-align: center;
-  width: 350px;
+  width: 283px;
 }
 .left-block > p {
   font-size: 12px;
@@ -112,11 +112,19 @@ h2 {
   background-color: #303030;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.75);
   display: none;
-  left: 2px;
   position: absolute;
   top: 30px;
   width: 150px;
   z-index: 5;
+}
+.main-menu li:nth-child(2) .submenu {
+  left: 9px;
+}
+.main-menu li:nth-child(3) .submenu {
+  left: 30px;
+}
+.main-menu li:nth-child(4) .submenu {
+  left: 18px;
 }
 .submenu > li {
 	display: block;
@@ -135,7 +143,7 @@ h2 {
 .container-main p {
   color: #424c43;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 24px;
   z-index: 1;
 }
 .left-fon {

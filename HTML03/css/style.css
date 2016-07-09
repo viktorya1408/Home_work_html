@@ -21,6 +21,8 @@ p,
   text-shadow: #000000 1px 1px;
 }
 .header-menu li {
+  border-left: 1px solid #535252;
+  border-right: 1px solid #535252; 
   display: inline-block;
   font-size: 15px;
   line-height: 40px;
