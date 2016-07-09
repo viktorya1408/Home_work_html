@@ -1,5 +1,5 @@
 body {
-  background-image: url(../img/backgr.png);
+  background-image: url(../img/backgr1.png);
   background-repeat: repeat-x;
   font-family: Tahoma;
   margin: 0 auto;
@@ -12,7 +12,7 @@ body {
 header {
   background-color: white;
   color: #128aa7;
-  height: 213px;
+  height: 175px;
   margin: 0;
 }
 h2 {
@@ -30,7 +30,7 @@ h2 {
   background: url(../img/logo.png) no-repeat bottom right;
   background-size: auto auto;
   float: left;
-  height: 210px;
+  height: 175px;
   margin-left: 30px;
   text-align: center;
   width: 283px;
@@ -45,8 +45,8 @@ h2 {
 }
 .contacts{
   font-size: 12px;
-  line-height: 20px;
-  padding: 15px 10px 15px 225px;
+  line-height: 18px;
+  padding: 8px 10px 8px 225px;
   width: 165px;
 }
  .topic {
@@ -54,7 +54,7 @@ h2 {
 }
  .country > li {
    display: inline-block;
-   padding-top: 20px;
+   padding-top: 10px;
    text-align: center;
    width: 60px;
 }
@@ -112,6 +112,7 @@ h2 {
   background-color: #303030;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.75);
   display: none;
+  line-height: 22px;
   position: absolute;
   top: 30px;
   width: 150px;
@@ -136,6 +137,9 @@ h2 {
 	padding-left: 15px;
 	text-align: left;
 	text-decoration: none;
+}
+.submenu > li > a:hover {
+  background-color: #0c73a0;
 }
 .main-menu > li:hover > .submenu {
   display: block;
