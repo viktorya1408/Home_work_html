@@ -10,8 +10,7 @@
 }
 .container {
   font-family: "Helvetica neue", Arial, sans-serif;
-  margin: 0 auto; 
-  width: 1215px;
+  width: 100%;
 }
 /*clearfix*/
 .clearfix:after {
@@ -21,12 +20,13 @@
 }
 /*Header*/
 header {
-  background-color: #085698;  
+  background-color: #085698;
   height: 36px;
+  width: 100%;
 }
 .menu,
 .left-menu,
-.menu div {
+.right-menu {
   display: inline-block;
   font-size: 14px;
   line-height: 36px;
@@ -49,14 +49,13 @@ header {
 }
 .left-menu > li > a {
   color: #60b5ed;
-  text-decoration: none; 
+  text-decoration: none;
 }
-.left-menu > li:hover {
+.left-menu li:hover {
   background-color: #4eabda;
 }
-.left-menu > li:hover a {
+.left-menu li:hover a {
   color: white;
-  font-weight: bold; 
 }
 .left-menu::after {
   color:#60b5ed;
@@ -65,66 +64,50 @@ header {
   right: -2px;
   top: 2px;
 }
-#offerts {
-  text-align: center;
-  width: 170px;
+.right-menu li {
+  color: #fff;
+  display: inline-block;  
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  text-align: center; 
 }
-#offerts a {
+.right-menu li:first-child {
+  width: 170px;
+} 
+.right-menu li:last-child {
+  width: 191px;
+}
+.right-menu li a {
   color: #fefefe;
   text-decoration: none;
 }
-#offerts:hover {
-
-}
-#offerts:hover {
+.right-menu li:hover {
   background: linear-gradient(to top, #52b1dd, #2e7ac4);
   border-bottom: 1px solid #4299d2;
   border-left: 1px solid #4299d2;
-  border-right: 1px solid #4299d2;    
+  border-right: 1px solid #4299d2;
 }
-#offerts:hover a {
+.right-menu li:hover a {
   color: #feffff;
-  text-decoration: underline;   
+  text-decoration: underline;
 }
 .icon {
   vertical-align: text-bottom;
 }
-#autor {
-  color: white;
-  height: 36px;
-  text-align: center;   
-  width: 191px;
-}
-#autor > a {
-  color: #fefefe;
-  text-decoration: none;  
-}
-#autor:hover {
-  background: linear-gradient(to top, #52b1dd, #2e7ac4);
-  border-bottom: 1px solid #4299d2;
-  border-left: 1px solid #4299d2;
-  border-right: 1px solid #4299d2;    
-}
-#autor:hover a {
-  color: #feffff;
-  text-decoration: underline;
-}
 /*main*/
 main {
-  background-image: url(../img/backgr.png);
-  height: 1028px;
-  position: relative;
+  background-image: url(../img/backgr1.png);
+  background-size: cover;
+  height: 100vh;
 }
 .my-form {
   background-color: rgba(0, 0, 0, 0.63);
   font-size: 14px;
   height: 613px;
   left: 50%;
-  margin: 0 auto;
-  margin-left: -280px;
-  margin-top: -307px;
   position: absolute;
   top: 50%;
+  transform: translate(-50%, -50%);
   width: 560px;
 }
 .cadastr {
@@ -147,7 +130,6 @@ main {
 }
 .reg-form {
   color: #ccc;
-  height: 100%;
   margin: 0 auto;
   width: 275px;
 }
@@ -157,37 +139,43 @@ main {
   background-color: #0f0e0e;
   border: 0;
   border-bottom: 1px solid #494948;
+  box-sizing: border-box;
   color: #ccc;
   height: 35px;
   margin-bottom: 17px;
+  padding-left: 17px;
   width: 100%;
 }
-input::-webkit-input-placeholder {padding-left: 17px;}
+/*input::-webkit-input-placeholder {padding-left: 17px;}
 input::-moz-placeholder          {padding-left: 17px;}
 input:-moz-placeholder           {padding-left: 17px;}
-input:-ms-input-placeholder      {padding-left: 17px;}
+input:-ms-input-placeholder      {padding-left: 17px;}*/
 .reg-form form > input[type=text]:focus,
 .reg-form form > input[type=email]:focus,
 .reg-form form > input[type=password]:focus {
   background-color: #1b5288;
   border: 0;
   border-bottom: 1px solid #689bcc;
+  box-shadow: 0px 0px 3px 2px rgba(105,155,205,1);  
   color: #fffbfb;
 }
+input:focus::-webkit-input-placeholder {color: #fffbfb;}
+input:focus::-moz-placeholder          {color: #fffbfb;}
+input:focus:-moz-placeholder           {color: #fffbfb;}
+input:focus:-ms-input-placeholder      {color: #fffbfb;}
 .reg-form form > input[type=text]:hover,
 .reg-form form > input[type=email]:hover,
 .reg-form form > input[type=password]:hover {
   background-color: #1b5288;
   border: 0;
   border-bottom: 1px solid #689bcc;
-  box-shadow: 0px 0px 3px 2px rgba(105,155,205,1);
 }
 input:hover::-webkit-input-placeholder {color: #fffbfb;}
 input:hover::-moz-placeholder          {color: #fffbfb;}
 input:hover:-moz-placeholder           {color: #fffbfb;}
 input:hover:-ms-input-placeholder      {color: #fffbfb;}
 .reg-form form  {
-  text-align: center;  
+  text-align: center;
 }
 .reg-form form > input[type=submit] {
   background: linear-gradient(to bottom, #50aedb, #2e7ac4);
