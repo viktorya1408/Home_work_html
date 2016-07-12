@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <title>Макет Cadastre</title>
+    <title>Макет Cadastre</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
@@ -17,17 +17,19 @@
             <li><a href="">Contato</a></li>
             <li><a href="#">Ajuda</a></li>
           </ul>
-          <ul class="right-menu">
-            <li>
+          <ul class="right-menu"><!--
+            --><li>
               <a href="#"><img src="img/flag.png" class="icon">&nbsp Minhas Ofertas</a>
-            </li>
-            <li>
-              <span>Ola!  </span>
-              <a href="#">Entrar</a>
-              <span> ou </span>
-              <a href="#">Cadastre-se</a>
-            </li>
-          </ul>
+            </li><!--
+            --><li>
+              <div class="link">Ola! 
+                <a href="#">Entrar</a>
+              </div>
+              <div class="link"> ou 
+                <a href="#">Cadastre-se</a>
+              </div>
+            </li><!--
+          --></ul>
         </div>
       </header>
       <main>
@@ -38,8 +40,8 @@
           <div class="button-fb">
             <a href="#"><img src="img/fb.png"></a>
           </div>
-          <div class="ou-line">OU</div>
           <div class="reg-form">
+            <div class="ou-line">OU</div>         
             <form action="#" name="form-rec" method="POST">
               <input type="text" name="first-name" placeholder="First Name" required>
               <input type="text" name="last-name" placeholder="Last Name" required>
@@ -52,7 +54,7 @@
               </div>
               <input type="submit" value="Create my Account">
             </form> 
-            <p>By clicking the button above, you agree to the Terms of Service Xiew our Privacy Policy.</p>
+            <p>By clicking the button above, you agree to the Terms of Service View our Privacy Policy.</p>
           </div>
         </div>
       </main>

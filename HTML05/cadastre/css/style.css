@@ -10,6 +10,7 @@
 }
 .container {
   font-family: "Helvetica neue", Arial, sans-serif;
+  min-width: 800px;
   width: 100%;
 }
 /*clearfix*/
@@ -69,15 +70,14 @@ header {
   display: inline-block;  
   border-left: 1px solid transparent;
   border-right: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  height: 35px;
   text-align: center; 
 }
 .right-menu li:first-child {
   width: 170px;
-} 
-.right-menu li:last-child {
-  width: 191px;
 }
-.right-menu li a {
+.right-menu li:first-child a {
   color: #fefefe;
   text-decoration: none;
 }
@@ -87,7 +87,27 @@ header {
   border-left: 1px solid #4299d2;
   border-right: 1px solid #4299d2;
 }
-.right-menu li:hover a {
+.right-menu li:last-child {
+  background: linear-gradient(to top, #52b1dd, #2e7ac4);
+  border-bottom: 1px solid #4299d2;
+  border-left: 1px solid #4299d2;
+  border-right: 1px solid #4299d2; 
+  width: 191px;
+}
+.right-menu li:hover {
+  background: linear-gradient(to top, #52b1dd, #2e7ac4);
+  border-bottom: 1px solid #4299d2;
+  border-left: 1px solid #4299d2;
+  border-right: 1px solid #4299d2;
+}
+.link a {
+  color: #fefefe;
+  text-decoration: none;
+}
+.link {
+  display: inline-block;
+}
+.link:hover a {
   color: #feffff;
   text-decoration: underline;
 }
@@ -96,18 +116,22 @@ header {
 }
 /*main*/
 main {
+  align-items: center;  
   background-image: url(../img/backgr1.png);
   background-size: cover;
+  display: flex;
   height: 100vh;
+  justify-content: center;
+  min-height: 613px;
+  text-align: center;
 }
 .my-form {
   background-color: rgba(0, 0, 0, 0.63);
+  display: inline-block;
   font-size: 14px;
   height: 613px;
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  line-height: 14px;
+  vertical-align: middle;
   width: 560px;
 }
 .cadastr {
@@ -122,17 +146,41 @@ main {
   padding-top: 36px;
   text-align: center;
 }
-.ou-line {
-  background: url(../img/ouline.png) center no-repeat;
-  color: #999999;
-  margin: 25px 0;
-  text-align: center;
-}
 .reg-form {
   color: #ccc;
   margin: 0 auto;
   width: 275px;
 }
+.ou-line {
+  color: #999;  
+  margin: 25px 0;
+  padding: 0 0px;
+  position: relative;  
+  text-align: center;
+  width: 275px;
+}
+.ou-line:before {
+  content: "";
+  display: block;
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #000;
+  width: 45%;
+  height: 0px;
+  position: absolute;
+  top: 50%;
+}
+.ou-line:after {
+  content: "";
+  display: block;
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #000;
+  width: 45%;
+  height: 0px;
+  position: absolute;
+  left: 55%; 
+  top: 50%;
+}
+
 .reg-form form > input[type=text],
 .reg-form form > input[type=email],
 .reg-form form > input[type=password] {
@@ -146,10 +194,6 @@ main {
   padding-left: 17px;
   width: 100%;
 }
-/*input::-webkit-input-placeholder {padding-left: 17px;}
-input::-moz-placeholder          {padding-left: 17px;}
-input:-moz-placeholder           {padding-left: 17px;}
-input:-ms-input-placeholder      {padding-left: 17px;}*/
 .reg-form form > input[type=text]:focus,
 .reg-form form > input[type=email]:focus,
 .reg-form form > input[type=password]:focus {
@@ -163,13 +207,13 @@ input:focus::-webkit-input-placeholder {color: #fffbfb;}
 input:focus::-moz-placeholder          {color: #fffbfb;}
 input:focus:-moz-placeholder           {color: #fffbfb;}
 input:focus:-ms-input-placeholder      {color: #fffbfb;}
-.reg-form form > input[type=text]:hover,
+/*.reg-form form > input[type=text]:hover,
 .reg-form form > input[type=email]:hover,
 .reg-form form > input[type=password]:hover {
   background-color: #1b5288;
   border: 0;
   border-bottom: 1px solid #689bcc;
-}
+}*/
 input:hover::-webkit-input-placeholder {color: #fffbfb;}
 input:hover::-moz-placeholder          {color: #fffbfb;}
 input:hover:-moz-placeholder           {color: #fffbfb;}
