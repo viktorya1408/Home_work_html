@@ -10,6 +10,8 @@
 }
 .container {
   font-family: "Helvetica neue", Arial, sans-serif;
+  height: 100vh;
+  line-height: 100vh;
   min-width: 800px;
   width: 100%;
 }
@@ -116,12 +118,8 @@ header {
 }
 /*main*/
 main {
-  align-items: center;  
   background-image: url(../img/backgr1.png);
   background-size: cover;
-  display: flex;
-  height: 100vh;
-  justify-content: center;
   min-height: 613px;
   text-align: center;
 }
