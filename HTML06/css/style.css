@@ -280,10 +280,13 @@ main {
   text-decoration: none;
 }
 .showcase > div > a:hover .name-brend {
- color: #5921f4;
+ color: #34ade0;
 }
 .showcase > div > a:hover .model {
- color: #5921f4;
+ color: #0d5a8f;
+}
+.showcase > div > a:hover .price {
+ color: #34ade0;
 }
 .name {
   height: 27px;
@@ -291,14 +294,24 @@ main {
 .firstline {
   padding-top: 3px;
 }
-.firstline > a > img {
+.image {
+  background-color: #fff;
+  border: 1px solid #aab3b6;
+  border-radius: 5px;
+  box-sizing: border-box;
+  height: 129px;
+  padding-top: 5px;
+  text-align: center;
+  width: 138px;
+}
+.firstline > a > .image {
   margin-bottom: 5px;
 }
-.secondline > a > img,
-.thirdline > a > img {
+.secondline > a > .image,
+.thirdline > a > .image {
   margin-bottom: 2px;
 }
-.secondline.secondcol > a > img {
+.secondline.secondcol > a > .image {
   margin-left: -1px;
   margin-right: 1px;
 }
@@ -311,7 +324,6 @@ main {
   color: #1f2528;
   font-size: 12.77px;
   font-weight: bold;
-  letter-spacing: 0.015em;
   line-height: 10px;
 }
 .price {
@@ -323,7 +335,7 @@ main {
   font-style: italic;
   letter-spacing: 0.02em;
   line-height: 10px;
-  padding-top: 2px;
+  padding-top: 3px;
 }
 .firstcol  > a > .price {
    padding-left: 38px;
@@ -600,7 +612,6 @@ vertical-align: middle;
   width: 82px;
 }
 .brand-logo {
-  background-image: url(../img/brandlogo.jpg);
   height: 27px; 	
   margin: 38px 0 24px 125px;
   width: 676px;
