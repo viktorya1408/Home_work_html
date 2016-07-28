@@ -4,44 +4,51 @@
     <title>Макет Pingbuller</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">	
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">	
   </head>
   <body>
     <header class="header">
       <div class="container">
-        <a href="#" class="logo-header clearfix"><img src="img/logo-header.png" alt="Pingbuller logo"></a>
-       	<nav>
-       	  <ul class="menu clearfix">
-       	    <li class="menu__item">
-       	      <a href="#" class="menu__item__link">Home</a>
-       	    </li>
-       	    <li class="menu__item">
-       	      <a href="#" class="menu__item__link">About</a>
-       	    </li>
-       	    <li class="menu__item">
-       	      <a href="#" class="menu__item__link">Blog</a>
-       	    </li>
-       	    <li class="menu__item">
-       	      <a href="#" class="menu__item__link">Products</a>
-       	    </li>
-       	    <li class="menu__item">
-       	      <a href="#" class="menu__item__link">Lorem Ipsum</a>
-       	    </li>
-       	    <li class="menu__item">
-       	      <a href="#" class="menu__item__link">Dolor Sit Amet</a>
-       	    </li>
-       	  </ul>
-       	</nav>
+        <div class="navig-header">
+          <a href="#" class="logo-header">
+            <img src="img/logo-header.png" class="logo-header__img" alt="Pingbuller logo"></a>
+         	<nav>
+            <div class="home-block">
+              <a href="#" class="home">Home</a>
+           	  <ul class="menu">
+          	    <li class="menu__item">
+          	      <a href="#" class="menu__item__link">Home</a>
+        	      </li>
+        	      <li class="menu__item">
+        	        <a href="#" class="menu__item__link">About</a>
+          	    </li>
+          	    <li class="menu__item">
+          	      <a href="#" class="menu__item__link">Blog</a>
+         	      </li>
+       	        <li class="menu__item">
+       	          <a href="#" class="menu__item__link">Products</a>
+       	        </li>
+         	      <li class="menu__item">
+         	        <a href="#" class="menu__item__link">Lorem Ipsum</a>
+                </li>
+        	      <li class="menu__item">
+        	        <a href="#" class="menu__item__link">Dolor Sit Amet</a>
+       	        </li>
+       	      </ul>
+            </div>   
+       	  </nav>
+        </div>
       </div> 
-      <div class="slider-strip">
+      <div class="slider-strip clearfix">
         <div class="container container--slider">
           <div class="slider-description">
             <h2 class="slider-description__h2">Lorem Ipsum Dolor</h1>
-            <h3 class="slider-description__h3">IT WILL MAKE ALL OF YOUR DREAMS COME TRUE</h2>
+            <h3 class="slider-description__h3">IT WILL MAKE ALL OF YOUR DREAMS COME <span class="true">TRUE</span> </h2>
             <p class="slider-description__text">Semper sollicitudin gravida eget, vestibulum sit amet sapien. Nunc dignissim tincidunt est, et auctor turpis ornare a. Nam venenatis hendrerit est at volutpat. Morbi elementum euismod lacus id semper. In odio nunc, imperdiet eget aliquam quis, euismod id lectus. Nulla interdum arcu et felis aliquam a tempus lectus lobortis.</p>
           </div>
           <div class="slider-img">
-          	<img src="img/iphone4.png">
+          	<img src="img/iphone4.png" class="slider-img__image">
           </div>
         </div>
         <div class="container container--navig">
@@ -87,9 +94,10 @@
         <section class="testimonials">
           <div class="testimonials-box">
             <h3 class="posts-h3">
-             <span>PingbulLer</span><span class="posts-h3--pink"> starts here</span>
+             <span>PingbulLer</span>
+             <a href="#" class="link-posts-h3"> starts here</a>
             </h3>
-            <p class="testimonials-box__text">“Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices po-suere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl.”</p>
+            <p class="testimonials-box__text"><span class="wrap">“Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices po-suere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl.”</span></p>
           </div>
           <div class="navigation navigation--testimonials">
             <input type="radio" name="testimonials" id="slid12">
@@ -105,15 +113,21 @@
         <section class="blog">
           <h3 class="posts-h3 posts-h3--blog">RECENT UPDATES</h3>
           <div class="blog-item">
-            <p class="blog-item__theme">Nunc turpis neque feugiat eget </p>
+            <p class="blog-item__theme">
+              <a href="#" class="blog-link">Nunc turpis neque feugiat eget</a>
+            </p>
             <p class="blog-item__date">Posted by Admin on March 13 2012 in Recent News</p>
           </div>
           <div class="blog-item blog-item--2">
-            <p class="blog-item__theme ">Nunc turpis neque feugiat eget </p>
+            <p class="blog-item__theme">
+              <a href="#" class="blog-link">Nunc turpis neque feugiat eget</a>
+            </p>
             <p class="blog-item__date">Posted by Admin on March 13 2012 in Category</p>
           </div>
           <div class="blog-item blog-item--3">
-            <p class="blog-item__theme">Nunc turpis neque feugiat eget </p>
+            <p class="blog-item__theme">
+              <a href="#" class="blog-link">Nunc turpis neque feugiat eget</a>
+            </p>
             <p class="blog-item__date">Posted by Admin on March 13 2012 in Blog Updates</p>
           </div>
           <div class="more more--blog">
@@ -125,9 +139,9 @@
     </div>
     <div class="partners">
       <section class="container container--partners">
-        <img src="img/plogo1.png" alt="">
-        <img src="img/plogo2.png" alt="">
-        <img src="img/plogo3.png" alt="">
+        <img src="img/plogo1.png" alt="" class="container--partners__img">
+        <img src="img/plogo2.png" alt="" class="container--partners__img">
+        <img src="img/plogo3.png" alt="" class="container--partners__img">
         <img src="img/plogo4.png" alt="">
         <img src="img/plogo5.png" alt="">
         <img src="img/plogo6.png" alt="">  
@@ -147,25 +161,33 @@
           </p>
         </section>
         <section class="item-categories item-categories--recent">
-          <p class="item-categories__h3">RECENT COMMENTS</p>
+          <p class="item-categories__h3">
+            <a href="#" class="link-categories">RECENT COMMENTS</a>
+          </p>
           <p class="item-categories__text">
             Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl. Quisque libero tellus, pharetra et eleifend id, interdum elementum arcu. Suspendisse quis mauris non ligula rutrum faucibus eu quis odio. Phasellus eu lobortis odio. In hac habitasse platea dictumst. Proin vestibulum turpis at mauris aliquam non euismod lorem euismod. Aenean dapibus ultricies enim, eget vulputate leo feugiat non.
           </p>          
         </section>
         <section class="item-categories item-categories--news">
-          <p class="item-categories__h3">NEWS CATEGORIES</p>
+          <p class="item-categories__h3">
+            <a href="#" class="link-categories">NEWS CATEGORIES</a>
+          </p>
           <p class="item-categories__text">
             Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl. Quisque libero tellus, pharetra et eleifend id, interdum elementum arcu. Suspendisse quis mauris non ligula rutrum faucibus eu quis odio. Phasellus eu lobortis odio. In hac habitasse platea dictumst. Proin vestibulum turpis at mauris aliquam non euismod lorem euismod. Aenean dapibus ultricies enim, eget vulputate leo feugiat non.
           </p>          
         </section>   
         <section class="item-categories item-categories--news-othersize">
-          <p class="item-categories__h3">NEWS CATEGORIES</p>
+          <p class="item-categories__h3">
+            <a href="#" class="link-categories">NEWS CATEGORIES</a>
+          </p>
           <p class="item-categories__text">
             Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl. Quisque libero tellus, pharetra et eleifend id, interdum elementum arcu. Suspendisse quis mauris non ligula rutrum faucibus eu quis odio. Phasellus eu lobortis odio. In hac habitasse platea dictumst. Proin vestibulum turpis at mauris aliquam non euismod lorem euismod. Aenean dapibus ultricies enim, eget vulputate leo feugiat non.
           </p>          
         </section>
         <section class="item-categories item-categories--news-othersize">
-          <p class="item-categories__h3">NEWS CATEGORIES</p>
+          <p class="item-categories__h3">
+            <a href="#" class="link-categories">NEWS CATEGORIES</a>
+          </p>
           <p class="item-categories__text">
             Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl. Quisque libero tellus, pharetra et eleifend id, interdum elementum arcu. Suspendisse quis mauris non ligula rutrum faucibus eu quis odio. Phasellus eu lobortis odio. In hac habitasse platea dictumst. Proin vestibulum turpis at mauris aliquam non euismod lorem euismod. Aenean dapibus ultricies enim, eget vulputate leo feugiat non.
           </p>          
@@ -174,7 +196,7 @@
     </div>
     <div class="footer-bg">
       <div class="container container--footer">
-        <nav>
+        <nav class="nav-footer">
           <ul class="menu menu--footer clearfix">
             <li class="menu__item menu__item--footer">
               <a href="#" class="menu__item__link menu__item__link--footer">Home</a>
