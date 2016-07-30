@@ -49,6 +49,9 @@ body {
 	font-family: "League Gothic", "Open sans extrabold", "Open sans light", Arial, Georgia, sans-sefif;
 	width: 100%;
 }
+a {
+    text-decoration: none;	
+}
 
 /*HEADER*/
 
@@ -115,7 +118,6 @@ nav {
 	font-family: "League Gothic";
 	font-size: 24px;
 	padding: 3px 2px 0 7px;  
-	text-decoration: none;
 	text-shadow: 1px 1.7px 2px rgba(0, 0, 0, 0.4);
 	text-transform: uppercase;  
 }
@@ -262,8 +264,7 @@ nav {
 	font-size: 18px;
 	font-weight: 400;
 	line-height: 24px;
-	text-decoration: none;
-	text-shadow: 0.5px 0.9px 0 #0f1518;
+   text-shadow: 0.5px 0.9px 0 #0f1518;
 }
 .more-link:hover {
 	text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
@@ -330,7 +331,6 @@ nav {
   font-size: 30px;
 	font-family: "League Gothic";
 	line-height: 1;
-	text-decoration: none;
 	text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.004);
 	text-transform: uppercase;
 }
@@ -409,11 +409,10 @@ nav {
 }
 .blog-link {
 	color: rgb(69, 69, 69);
-  font-family: "Open sans extrabold";
-  text-decoration: none;
+    font-family: "Open sans extrabold";
 }
 .blog-link:hover {
-  color: #edbfff;
+    color: #edbfff;
 }
 .blog-item__date {
 	height: 24px;
@@ -503,7 +502,6 @@ nav {
 	color: #454545;
 	font-family: "League Gothic";
 	font-size: 30px;
-	text-decoration: none;
 }
 .link-categories:hover{
   color: #edbfff;
@@ -520,22 +518,31 @@ nav {
 .nav-footer{
 	width: 542px;  
 }
-.menu--footer {
+.menu-footer {
 	display: inline-block;
 	float: left;
 	margin: 0;
 	width: 100%;
  }
-.menu__item--footer {
+.menu-footer__item {
+    display: inline-block;
 	line-height: 34px;
 	margin-right: 7.76%;
 }
-.menu__item--footer:last-child {
-	margin: 0;
+.menu-footer__item:last-child {
+	margin-right: 0;
 }
-.menu__item__link--footer {
+.menu-footer__item__link {
+    border-bottom: 2px solid transparent;	
+    color: white;
+    font-family: "League Gothic";	
 	font-size: 20px;
-	padding: 0;	
+	padding: 0;
+	text-shadow: 1px 1.7px 2px rgba(0, 0, 0, 0.4);
+    text-transform: uppercase;
+}
+.menu-footer__item__link:hover {
+	border-bottom: 2px solid #edbfff;
 }
 .design {
 	color: white;
@@ -784,8 +791,15 @@ padding-top: 98px;
 	margin-left: 7px;
 	width: 541px;
 }
-.menu--footer {
-	margin-bottom: 0;
+.menu-footer {
+	display: inline-flex;
+    float: left;
+    justify-content: space-between;
+    margin-left: 13px;
+    width: 100%;
+}
+.menu-footer__item {
+	margin-right: 5.1%
 }
 .design {
 	padding: 52px 20px 0 0;
@@ -872,7 +886,6 @@ nav {
 	display: block;
 	height: 41px;
   padding: 9px 0 0 0;  
-  text-decoration: none;
 }
 .menu__item__link:hover {
 	background: rgba(0, 0, 0, 0.3); 
@@ -1039,13 +1052,13 @@ nav {
 	height: 201px;
 }
 .container--footer {
-	 padding: 47px 20px 0;
+	 padding: 39px 20px 0;
 }
 .nav-footer {
 	display: block; 
 	width: 100%;
 }
-.menu--footer {
+.menu-footer {
 	background: transparent none repeat scroll 0% 0%;
 	border: none;
 	box-shadow: none;
@@ -1053,27 +1066,21 @@ nav {
 	float: none;
 	height: 34px;
 	justify-content: space-between;
-	margin-bottom: 8px;
-	position: relative;
-	width: inherit;
+	margin-bottom: 16px;
 }
-.menu__item--footer{
+.menu-footer__item{
 	background: transparent;
 	border: none;
-	display: inline-block;
 	height: 34px;
 	margin-right: 18px;
-	width: initial;
 }
-/*	margin-right: 40.5px;*/
-
-.menu__item__link--footer {
+.menu-footer__item__link {
   background: transparent;
-	border-bottom: 2px solid transparent;
+  border-bottom: 2px solid transparent;
   height: 34px;
   padding: 4px 0 2px; 
  }
-.menu__item__link--footer:hover {
+.menu-footer__item__link:hover {
 	background: transparent;
 	border-bottom: 2px solid #edbfff;
 }
@@ -1163,7 +1170,6 @@ nav {
 	display: block;
 	height: 41px;
   padding: 9px 0 0 0;  
-  text-decoration: none;
 }
 .menu__item__link:hover {
 	background: rgba(0, 0, 0, 0.3); 
