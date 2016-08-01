@@ -1,206 +1,213 @@
 <!DOCTYPE html>
+<html lang="en">
 <html>
   <head>
-    <title>Макет Pingbuller</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Макет Pingbuller</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">	
   </head>
   <body>
     <header class="header">
       <div class="container">
-        <div class="navig-header">
-          <a href="#" class="logo-header">
-            <img src="img/logo-header.png" class="logo-header__img" alt="Pingbuller logo"></a>
-         	<nav>
-            <div class="home-block">
-              <a href="#" class="home">Home</a>
-           	  <ul class="menu">
-          	    <li class="menu__item">
-          	      <a href="#" class="menu__item__link">Home</a>
+        <div class="header__navig">
+          <a href="#" class="header__logo">
+            <img src="img/logo-header.png" class="header__img" alt="Pingbuller logo"></a>
+         	<nav class="header__menu">
+              <a href="#" class="header__menu__home">Home</a>
+           	  <ul class="header__menu__block">
+          	    <li class="header__menu__item header__menu__item--first">
+          	      <a href="#" class="header__menu__link">Home</a>
         	      </li>
-        	      <li class="menu__item">
-        	        <a href="#" class="menu__item__link">About</a>
+        	      <li class="header__menu__item">
+        	        <a href="#" class="header__menu__link">About</a>
           	    </li>
-          	    <li class="menu__item">
-          	      <a href="#" class="menu__item__link">Blog</a>
+          	    <li class="header__menu__item">
+          	      <a href="#" class="header__menu__link">Blog</a>
          	      </li>
-       	        <li class="menu__item">
-       	          <a href="#" class="menu__item__link">Products</a>
+       	        <li class="header__menu__item">
+       	          <a href="#" class="header__menu__link">Products</a>
        	        </li>
-         	      <li class="menu__item">
-         	        <a href="#" class="menu__item__link">Lorem Ipsum</a>
+         	      <li class="header__menu__item">
+         	        <a href="#" class="header__menu__link">Lorem Ipsum</a>
                 </li>
-        	      <li class="menu__item">
-        	        <a href="#" class="menu__item__link">Dolor Sit Amet</a>
+        	      <li class="header__menu__item header__menu__item--last">
+        	        <a href="#" class="header__menu__link">Dolor Sit Amet</a>
        	        </li>
        	      </ul>
-            </div>   
        	  </nav>
         </div>
       </div> 
-      <div class="slider-strip clearfix">
+      <div class="slider clearfix">
         <div class="container container--slider">
-          <div class="slider-description">
-            <h2 class="slider-description__h2">Lorem Ipsum Dolor</h2>
-            <h3 class="slider-description__h3">IT WILL MAKE ALL OF YOUR DREAMS COME <span class="true">TRUE</span></h3>
-            <p class="slider-description__text">Semper sollicitudin gravida eget, vestibulum sit amet sapien. Nunc dignissim tincidunt est, et auctor turpis ornare a. Nam venenatis hendrerit est at volutpat. Morbi elementum euismod lacus id semper. In odio nunc, imperdiet eget aliquam quis, euismod id lectus. Nulla interdum arcu et felis aliquam a tempus lectus lobortis.</p>
+          <div class="slider__description">
+            <h2 class="slider__description__h2">Lorem Ipsum Dolor</h2>
+            <h3 class="slider__description__h3">IT WILL MAKE ALL OF YOUR DREAMS COME <span class="true">TRUE</span></h3>
+            <p class="slider__description__text">Semper sollicitudin gravida eget, vestibulum sit amet sapien. Nunc dignissim tincidunt est, et auctor turpis ornare a. Nam venenatis hendrerit est at volutpat. Morbi elementum euismod lacus id semper. In odio nunc, imperdiet eget aliquam quis, euismod id lectus. Nulla interdum arcu et felis aliquam a tempus lectus lobortis.</p>
           </div>
-          <div class="slider-img">
-          	<img src="img/iphone4.png" class="slider-img__image" alt="">
+          <div class="slider__img">
+              <img src="img/iphone-blur.png"  alt="" class="slider__image--1">
+              <img src="img/iphone4.png"  alt="" class="slider__image--2">
+          	  <img src="img/play.png"  alt="" class="slider__image--3">
+          </div>
+          <div class="slider__img--480">
+              <img src="img/iphone-480.png"  alt="" class="slider__image--4">
           </div>
         </div>
-        <div class="container container--navig">
-          <div class="navigation">
+        <div class="container container--slider-navig">
+          <div class="slider__navigation">
             <input type="radio" name="slider" id="slid1">
             <input type="radio" name="slider" id="slid2" checked>
             <input type="radio" name="slider" id="slid3">
             <input type="radio" name="slider" id="slid4">
             <label class="radio-buttton" id="sl1" for="slid1"></label>
-            <label class="radio-buttton" id="sl2" for="slid2"></label>
+            <label class="radio-buttton slider--aktiv" id="sl2" for="slid2"></label>
             <label class="radio-buttton" id="sl3" for="slid3"></label>
             <label class="radio-buttton" id="sl4" for="slid4"></label>
           </div>
         </div>
       </div>
     </header>
-    <div class="blurb">
+    <div class="about">
       <div class="container container--about">
-          <section class="blurb__about">
+          <section class="about__section">
             <h3 class="about__h3">ABOUT OUR COMPANY</h3>
             <p class="about__text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices po-suere. Pellentesque vel lacus eget nisi convallis auctor. Nam</p>
-            <div class="more">
-              <a href="#" class="more-link">READ MORE</a>
+            <div class="about__more">
+              <a href="#" class="about__link">READ MORE</a>
             </div>
           </section>
-          <section class="blurb__about">
+          <section class="about__section about__section--second">
             <h3 class="about__h3 about__h3--2">ABOUT OUR COMPANY</h3>
-            <p class="about__text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices po-suere. Pellentesque vel lacus eget nisi convallis auctor. Nam</p>
-            <div class="more">
-              <a href="#" class="more-link">READ MORE</a>
+            <p class="about__text about__text--second">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices po-suere. Pellentesque vel lacus eget nisi convallis auctor. Nam</p>
+            <div class="about__more">
+              <a href="#" class="about__link">READ MORE</a>
             </div>
           </section>
-          <section class="blurb__about">
+          <section class="about__section about__section--third">
             <h3 class="about__h3 about__h3--3">ABOUT OUR COMPANY</h3>
-            <p class="about__text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque.  Praesent rhoncus ultrices po-suere. Pellentesque vel lacus eget nisi convallis auctor. Nam</p>
-            <div class="more">
-              <a href="#" class="more-link">READ MORE</a>
+            <p class="about__text about__text--third ">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque.  Praesent rhoncus ultrices po-suere. Pellentesque vel lacus eget nisi convallis auctor. Nam</p>
+            <div class="about__more about__more--last">
+              <a href="#" class="about__link">READ MORE</a>
             </div>
           </section>
       </div>
     </div>
     <div class="posts">
       <div class="container container--posts">
-        <section class="testimonials">
-          <div class="testimonials-box">
-            <h3 class="posts-h3">
+        <section class="post__testimonials">
+          <div class="post__testimonials-box">
+            <h3 class="posts__h3">
              <span>PingbulLer</span>
-             <a href="#" class="link-posts-h3"> starts here</a>
+             <a href="#" class="posts__link-h3"> starts here</a>
             </h3>
-            <p class="testimonials-box__text"><span class="wrap">“Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices po-suere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl.”</span></p>
+            <p class="posts__testimonials-box__text"><span class="posts__wrap">“Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices po-suere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl.”</span></p>
           </div>
-          <div class="navigation navigation--testimonials">
+          <div class="posts__testimonials-navig">
             <input type="radio" name="testimonials" id="slid12">
             <input type="radio" name="testimonials" id="slid22" checked>
             <input type="radio" name="testimonials" id="slid32">
             <input type="radio" name="testimonials" id="slid42">
             <label class="radio-buttton radio-buttton--testimonials" id="sl12" for="slid12"></label>
-            <label class="radio-buttton radio-buttton--testimonials" id="sl22" for="slid22"></label>
+            <label class="radio-buttton radio-buttton--testimonials testimonials--active" id="sl22" for="slid22"></label>
             <label class="radio-buttton radio-buttton--testimonials" id="sl32" for="slid32"></label>
             <label class="radio-buttton radio-buttton--testimonials" id="sl42" for="slid42"></label>
           </div>
         </section>
-        <section class="blog">
-          <h3 class="posts-h3 posts-h3--blog">RECENT UPDATES</h3>
-          <div class="blog-item">
-            <p class="blog-item__theme">
-              <a href="#" class="blog-link">Nunc turpis neque feugiat eget</a>
+        <section class="posts__blog">
+          <h3 class="posts__h3 posts__h3--blog">RECENT UPDATES</h3>
+          <div class="posts__blog__item">
+            <p class="posts__blog__theme">
+              <a href="#" class="posts__blog__link">Nunc turpis neque feugiat eget</a>
             </p>
-            <p class="blog-item__date">Posted by Admin on March 13 2012 in Recent News</p>
+            <p class="posts__blog__date">Posted by Admin on March 13 2012 in Recent News</p>
           </div>
-          <div class="blog-item blog-item--2">
-            <p class="blog-item__theme">
-              <a href="#" class="blog-link">Nunc turpis neque feugiat eget</a>
+          <div class="posts__blog__item posts__blog__item--2">
+            <p class="posts__blog__theme">
+              <a href="#" class="posts__blog__link">Nunc turpis neque feugiat eget</a>
             </p>
-            <p class="blog-item__date">Posted by Admin on March 13 2012 in Category</p>
+            <p class="posts__blog__date">Posted by Admin on March 13 2012 in Category</p>
           </div>
-          <div class="blog-item blog-item--3">
-            <p class="blog-item__theme">
-              <a href="#" class="blog-link">Nunc turpis neque feugiat eget</a>
+          <div class="posts__blog__item posts__blog__item--3">
+            <p class="posts__blog__theme">
+              <a href="#" class="posts__blog__link">Nunc turpis neque feugiat eget</a>
             </p>
-            <p class="blog-item__date">Posted by Admin on March 13 2012 in Blog Updates</p>
+            <p class="posts__blog__date posts__blog__date--3">Posted by Admin on March 13 2012 in Blog Updates</p>
           </div>
-          <div class="more more--blog">
-            <a href="#" class="more-link more-link--blog size-960">READ MORE HERE</a>
-            <a href="#" class="more-link more-link--blog size-other">MORE BLOG POSTS</a>
+          <div class="posts__more">
+            <a href="#" class="posts__link posts__link--size-960">READ MORE HERE</a>
+            <a href="#" class="posts__link posts__link--size-other">MORE BLOG POSTS</a>
           </div>
         </section>
       </div>
     </div>
     <div class="partners">
       <section class="container container--partners">
-        <a href="">
-          <img src="img/plogo1.png" alt="" class="container--partners__img">
+        <div class="partners__images">
+        <a href="" class="partners__images__link">
+           <img src="img/plogo1.png" alt="" >
         </a>
-        <a href="">
-          <img src="img/plogo2.png" alt="" class="container--partners__img">
+        <a href="" class="partners__images__link">
+          <img src="img/plogo2.png" alt="">
         </a>
-        <a href="">
-          <img src="img/plogo3.png" alt="" class="container--partners__img">
+        <a href="" class="partners__images__link partners__images__link--320">
+          <img src="img/plogo3.png" alt="">
         </a>
-        <a href="">
+        <a href="" class="partners__images__link partners__images__link--480 partners__images__link--320">
           <img src="img/plogo4.png" alt="">
         </a>
-        <a href="">
+        <a href="" class="partners__images__link partners__images__link--480">
           <img src="img/plogo5.png" alt="">
         </a>
-        <a href="">
+        <a href="" class="partners__images__link partners__images__link--last">
           <img src="img/plogo6.png" alt="">
-        </a>  
+        </a>
+        </div>
       </section>
     </div> 
+ 
     <footer>
       <div class="categories">
         <div class="container container--categories">
-          <section class="item-categories item-categories--logo">
+          <section class="categories__item categories__item--logo">
             <a href="#"><img src="img/logo-footer.png" alt="Pingbuller"></a>
-            <p class="item-categories__copyright">
+            <p class="categories__copyright">
               Copyright 2013, Pingbull AS
             </p>
-            <p class="item-categories__text">
+            <p class="categories__text">
               Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu  libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl. Quisque libero tellus, pharetra et eleifend id, interdum elementum arcu. Suspendisse quis mauris non ligula rutrum faucibus eu quis odio. Phasellus eu lobortis odio. In hac habitasse platea dictumst. Proin vestibulum turpis at mauris aliquam non euismod lorem euismod. Aenean dapibus ultricies enim, eget vulputate leo feugiat non.
             </p>
           </section>
-          <section class="item-categories item-categories--recent">
-            <p class="item-categories__h3">
-              <a href="#" class="link-categories">RECENT COMMENTS</a>
+          <section class="categories__item categories__item--recent">
+            <p class="categories__h3">
+              <a href="#" class="categories__link">RECENT COMMENTS</a>
             </p>
-            <p class="item-categories__text">
+            <p class="categories__text">
               Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl. Quisque libero tellus, pharetra et eleifend id, interdum elementum arcu. Suspendisse quis mauris non ligula rutrum faucibus eu quis odio. Phasellus eu lobortis odio. In hac habitasse platea dictumst. Proin vestibulum turpis at mauris aliquam non euismod lorem euismod. Aenean dapibus ultricies enim, eget vulputate leo feugiat non.
             </p>          
           </section>
-          <section class="item-categories item-categories--news">
-            <p class="item-categories__h3">
-              <a href="#" class="link-categories">NEWS CATEGORIES</a>
+          <section class="categories__item categories__item--news">
+            <p class="categories__h3">
+              <a href="#" class="categories__link">NEWS CATEGORIES</a>
             </p>
-            <p class="item-categories__text">
+            <p class="categories__text">
               Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl. Quisque libero tellus, pharetra et eleifend id, interdum elementum arcu. Suspendisse quis mauris non ligula rutrum faucibus eu quis odio. Phasellus eu lobortis odio. In hac habitasse platea dictumst. Proin vestibulum turpis at mauris aliquam non euismod lorem euismod. Aenean dapibus ultricies enim, eget vulputate leo feugiat non.
             </p>          
           </section>   
-          <section class="item-categories item-categories--news-othersize">
-            <p class="item-categories__h3">
-              <a href="#" class="link-categories">NEWS CATEGORIES</a>
+          <section class="categories__item categories__item--news-othersize">
+            <p class="categories__h3">
+              <a href="#" class="categories__link">NEWS CATEGORIES</a>
             </p>
-            <p class="item-categories__text">
+            <p class="categories__text">
               Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl. Quisque libero tellus, pharetra et eleifend id, interdum elementum arcu. Suspendisse quis mauris non ligula rutrum faucibus eu quis odio. Phasellus eu lobortis odio. In hac habitasse platea dictumst. Proin vestibulum turpis at mauris aliquam non euismod lorem euismod. Aenean dapibus ultricies enim, eget vulputate leo feugiat non.
             </p>          
           </section>
-          <section class="item-categories item-categories--news-othersize">
-            <p class="item-categories__h3">
-              <a href="#" class="link-categories">NEWS CATEGORIES</a>
+          <section class="categories__item categories__item--news-othersize categories__item--news-othersize--last">
+            <p class="categories__h3">
+              <a href="#" class="categories__link">NEWS CATEGORIES</a>
             </p>
-            <p class="item-categories__text">
+            <p class="categories__text">
               Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl. Quisque libero tellus, pharetra et eleifend id, interdum elementum arcu. Suspendisse quis mauris non ligula rutrum faucibus eu quis odio. Phasellus eu lobortis odio. In hac habitasse platea dictumst. Proin vestibulum turpis at mauris aliquam non euismod lorem euismod. Aenean dapibus ultricies enim, eget vulputate leo feugiat non.
             </p>          
           </section>                        
@@ -225,7 +232,7 @@
               <li class="menu-footer__item">
                 <a href="#" class="menu-footer__item__link">Lorem Ipsum</a>
               </li>
-              <li class="menu-footer__item">
+              <li class="menu-footer__item footer-last">
                 <a href="#" class="menu-footer__item__link">Dolor Sit Amet</a>
               </li>
             </ul>
