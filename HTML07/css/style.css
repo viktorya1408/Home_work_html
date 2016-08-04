@@ -75,8 +75,7 @@ header {
 .header__logo {
 	display: inline-block;
 	margin-bottom: 35px;
-	margin-right: 165px;
-	position: relative;
+	position: absolute;
 	vertical-align: top;
 }
 .header__img {
@@ -89,26 +88,28 @@ header {
 	 top: -20px;	
 }
 .header__menu {
+	box-sizing: border-box;
 	display: inline-block;
-	max-width: 639px;  
+	padding-left: 152px;
+	width: 100%;  
 }
 .header__menu__home {
 	display: none;
 }
 .header__menu__block {
+	box-sizing: border-box;
 	display: inline-block;
 	margin-bottom:0px;
+	width: 100%;
+	text-align: right;
 }
 .header__menu__item {
 	border-bottom: 2px solid transparent;
 	display: inline-block;
 	line-height: 30px;
-	margin-right: 40.5px;
+	margin-left: 4.95%
 }
-.header__menu__item--last {
-	margin-left: -1px;
-	margin-right: -2px;
-}
+
 .header__menu__link,
 .header__menu__home {
 	color: white;
@@ -354,6 +355,12 @@ header {
 	position: relative;
 	width: 94.5%;  
 }
+.posts__foto {
+	display: block;
+	left: -22px;
+	position: absolute;
+	top: 18px;
+}
 .post__testimonials-box:after {
 	background-image: url(../img/corner.png);
 	bottom: -19px;
@@ -394,17 +401,6 @@ header {
 	height: 165px;
 	overflow: hidden;
 	width: 100%;
-}
-.posts__testimonials-box__text:before {
-	background-image: url(../img/ikon-posts.png);
-	background-position: -5px -5px;
-	content: '';
-	display: block;
-	height: 51px;
-	left: -21px;
-	position: absolute;
-	top: -42px;
-	width: 50px;	
 }
 .posts__testimonials-navig {	
 	margin: 0 175px 66px;
@@ -452,21 +448,14 @@ header {
 .posts__blog__item--3 {
 	padding-top: 17px;
 }
-.posts__blog__item:before {
-	background-image: url(../img/ikon-posts.png);
-	background-position: -65px -5px;
-	content: '';
+.posts__blog__foto {
 	display: block;
-	height: 49px;
-	left: 21px;
+	left: 23px;
 	position: absolute;
-	width: 49px;	
+	top: 18px;
 }
-.posts__blog__item--2:before {
-	background-position: -124px -5px;	
-}
-.posts__blog__item--3:before {
-	background-position: -183px -5px;	
+.posts__blog__foto--1 {
+	top: 0;
 }
 .posts__blog__link {
 	color: rgb(69, 69, 69);
@@ -611,16 +600,15 @@ header {
 	height: 100%;
 	padding-top: 39px;
 }
-.nav-footer{
-	width: 534px;  
+.footer-nav{
+	position: relative;
 }
-.menu-footer {
+.footer-menu {
 	display: inline-block;
-	float: left;
 	margin: 0;
 	width: 100%;
  }
-.menu-footer__item {
+.footer-menu__item {
     display: inline-block;
 	line-height: 34px;
 	margin-right: 7.76%;
@@ -628,7 +616,7 @@ header {
 .footer-last {
 	margin-right: 0;
 }
-.menu-footer__item__link {
+.footer-menu__item__link {
     border-bottom: 2px solid transparent;	
     color: white;
     font-family: "League Gothic";	
@@ -637,7 +625,7 @@ header {
 	text-shadow: 1px 1.7px 2px rgba(0, 0, 0, 0.4);
     text-transform: uppercase;
 }
-.menu-footer__item__link:hover {
+.footer-menu__item__link:hover {
 	border-bottom: 2px solid #edbfff;
 }
 .design {
@@ -648,10 +636,19 @@ header {
 	font-size: 12px;
 	line-height: 34px;
 	padding-top: 2px;
+	position: absolute;
+	right: 0;
+	top: 40px;
 	text-shadow: 1px 1.7px 2px rgba(0, 0, 0, 0.4);
 }
 .name {
 	font-family: "Open Sans extrabold";	
+}
+@media (max-width: 794px) 
+and (min-width: 769px) {
+.header__menu__item {
+	margin-left: 4.5%
+}
 }
 
 /*SCREEN 768*/
@@ -668,7 +665,8 @@ header {
 }
 .header__logo {
 	left: 20px;
-	margin-bottom: 30px;	
+	margin-bottom: 30px;
+	position: relative;
 }
 .header__logo:before {
 	 content: '';
@@ -676,14 +674,16 @@ header {
 .header__menu {
 	display: block;
 	margin-left: 11px;
+	padding-left: 0;
 	max-width: 643px;
 }
 .header__menu__block {
 	margin: 0 0 66px 0px;
-	width: 100%;	
+	text-align: left;
 }
 .header__menu__item {
 	line-height: 34px;
+	margin-left: 0;
 	margin-right: 6.25%;
 }
 .header__menu__item--last{
@@ -825,10 +825,6 @@ header {
 	height: 145px;
 	overflow: hidden;
 }
-.posts__testimonials-box__text:before {
-	left: -24px;
-	top: -59px;
-}
 .posts__testimonials-navig { 
 	margin: 0 115px 63px;
 	width: 90px;  
@@ -845,9 +841,16 @@ header {
 	background: url(../img/nav-testimonials.png) -22px 0 no-repeat;
 }
 .posts__blog {
+	padding-top: 2px;
 	padding-left: 8px;
 	padding-right: 20px;
 	width: 49%; 
+}
+.posts__blog__foto {
+	left: 20px;
+}
+.posts__blog__foto--1 {
+	top: 1px;
 }
 .posts__h3--blog {
 	font-size: 30px;
@@ -855,19 +858,11 @@ header {
 }
 .posts__blog__item {
 	padding-left: 85px;
+	padding-top: 0;
 }
 .posts__blog__item--2, 
 .posts__blog__item--3 {
 	padding-top: 17px;  
-}
-.posts__blog__item:before {
-	background-position: -65px -4px;
-}
-.posts__blog__item--2:before {
-	background-position: -124px -4px;	
-}
-.posts__blog__item--3:before {
-	background-position: -183px -4px;	
 }
 .posts__blog__theme {
 	height: 26px;
@@ -877,8 +872,8 @@ header {
 	height: 24px;
 }
 .posts__more {
-	padding-right: 20px;
-	margin: 17px 0 88px;
+	padding-right: 23px;
+	margin: 15px 0 88px;
 }
 .posts__link--size-960 {
 	display: none;  
@@ -933,23 +928,47 @@ header {
 	height: 100%;
 	padding-top: 39px;
 }
-.nav-footer{
+.footer-nav{
 	display: block;
 	margin-left: 19px;
 	max-width: 532px;  
 }
-.menu-footer {
+.footer-menu {
 	margin: 0;
 	width: 100%;
  }
-.menu-footer__item {
+.footer-menu__item {
  	margin-right: 7.8%;
 }
 .footer-last {
 	margin-right: 0;
 }
 .design {
-	padding: 52px 20px 0 0;
+	padding: 50px 20px 0 0;
+}
+}
+@media (max-width: 688px) 
+and (min-width: 595px) {
+.header__menu__item {
+     margin-right: 4%;
+}
+}
+@media (max-width: 594px) 
+and (min-width: 542px) {
+.header__menu__item {
+     margin-right: 2.7%;
+}
+.footer-menu__item {
+ 	margin-right: 5%;
+}
+}
+@media (max-width: 541px) 
+and (min-width: 481px) {
+.header__menu__item {
+     margin-right: 0.8%;
+}
+.footer-menu__item {
+ 	margin-right: 5%;
 }
 }
 
@@ -972,12 +991,14 @@ and (min-width: 321px) {
 	display: block;
 	margin-right: 0;
 	padding-top: 70px;
+	position: relative;
 }
 .header__logo:before {
 	content: '';
 }
 .header__menu {
 	height: 60px;
+	padding: 0;
 	position: relative;
 	width: 244px;
 }
@@ -1005,6 +1026,7 @@ and (min-width: 321px) {
 }
 .header__menu:hover > .header__menu__block {
 	display: block;
+	text-align: center;
 }
 .header__menu__item {
 	border-bottom: 1px solid #3a2d42;
@@ -1061,6 +1083,7 @@ and (min-width: 321px) {
 	font-size: 18px;
 	height: 18px;
 	overflow: hidden;
+	padding-top: 3px;
 	width: 100%;  
 }
 .slider__description__text {
@@ -1088,12 +1111,12 @@ and (min-width: 321px) {
 	height: 597px;
 }
 .container--about {
-	padding: 72px 20px 70px 20px;
+	padding: 74px 20px 68px 20px;
 }
 .about__section {
 	box-sizing: border-box;
 	max-width: 440px;
-	padding-bottom: 19px;
+	padding-bottom: 18px;
 
 	width: 100%;
 }
@@ -1137,17 +1160,18 @@ and (min-width: 321px) {
 }
 .post__testimonials-box {
 	height: 270px;
-	margin-bottom: 23px;
+	margin-bottom: 24px;
 	width: 100%;
 }
 .posts__testimonials-box__text {
 	letter-spacing: -0.04em;
 	max-height: 168px;
+	padding: 13px 0 35px 39px;
 	width: 93.75%;
 }
-.posts__testimonials-box__text::before {
+/*.posts__testimonials-box__text::before {
 	background-position: -8px -5px;
-}
+}*/
 .posts__wrap {
 	height: 165px;
 	overflow: hidden;
@@ -1173,9 +1197,17 @@ and (min-width: 321px) {
 .posts__blog__item--3 {
 	padding-top: 18px;
 }
+.posts__blog__foto {
+	left: 21px;
+	top: 18px;
+}
+.posts__blog__theme {
+	height: 24px;
+	overflow: hidden;
+}
 .posts__more {
 	margin: 16px 22px 83px 0;	
-	padding-right: 18px;
+	padding-right: 17px;
 	position: relative;
     text-align: right;
 }
@@ -1187,19 +1219,29 @@ and (min-width: 321px) {
 }
 .container--partners {
 	height: 233px;
-	padding: 0 50px;
+	padding: 0  0 0 5px;
 }
 .partners__images {
 	margin-top: 32px;
 	padding: 0;
+	text-align: center;
 }
 .partners__images__link {
 	margin: 5px 0 18px;
 	text-align: center;
-	width: 32.5%;
+	width: 25.5%;
 }
-.partners__images__link--480 {
+.partners__images__link--480-1 {
 	text-align: left;
+	width: 22%;
+}
+.partners__images__link--480-2 {
+	text-align: left;
+	width: 33%
+}
+.partners__images__link--last {
+	text-align: right;
+	width: 18%;
 }
 .container--categories {
 	padding: 78px 10px 29px 19px;
@@ -1232,50 +1274,67 @@ and (min-width: 321px) {
 	height: 201px;
 }
 .container--footer {
-	 padding: 39px 17px 0 22px;
+	 padding: 39px 0 0 22px;
 }
-.nav-footer {
-	display: block; 
+.footer-nav {
+	box-sizing: border-box;
+	display: block;
+	padding-right: 3.8%;
 	width: 100%;
 }
-.menu-footer {
+.footer-menu {
 	background: transparent none repeat scroll 0% 0%;
 	border: none;
 	box-shadow: none;
-	display: flex;
-	float: none;
 	height: 34px;
-	justify-content: space-between;
 	margin-bottom: 16px;
 }
-.menu-footer__item{
+.footer-menu__item{
 	background: transparent;
 	border: none;
 	height: 34px;
-	margin-right: 18px;
+	margin-right: 5%;
 }
 .footer-last {
 	margin-right: 0;
 }
-.menu-footer__item__link {
+.footer-menu__item__link {
   background: transparent;
   border-bottom: 2px solid transparent;
   height: 34px;
   padding: 4px 0 2px; 
  }
-.menu-footer__item__link:hover {
+.footer-menu__item__link:hover {
 	background: transparent;
 	border-bottom: 3px solid #edbfff;
 }
 .design {
 	display: block;
 	float: none;
+	margin-right: 22px;
+	position: relative;
 	text-align: center;
+	top: 0;
+}
+}
+@media (max-width: 470px) 
+and (min-width: 410px) {
+.footer-menu__item{
+	margin-right: 2.5%;
+}
+.footer-last {
+	margin-right: 0;
+}
+}
+@media (max-width: 409px) 
+and (min-width: 321px) {
+.footer-nav{
+    display: none;
 }
 }
 
 /*SCREEN 320*/
-@media (max-width: 321px) {
+@media (max-width: 320px) {
 body {
 	min-width: 320px;
 }
@@ -1295,12 +1354,14 @@ header {
 	display: block;
 	margin-right: 0;
 	padding-top: 70px;
+	position: relative;
 }
 .header__logo:before {
 	content: '';
 }
 .header__menu {
 	height: 60px;
+	padding: 0;
 	position: relative;
 	width: 244px;
 }
@@ -1322,6 +1383,7 @@ header {
 	opacity: 0.9;
 	overflow: hidden;
 	position: absolute;
+	text-align: center;
 	top: -13px;
 	width: 244px;
 	z-index: 10;
@@ -1463,10 +1525,10 @@ header {
  	font-size: 24px;
 }
 
-.posts__testimonials-box__text:before {
+/*.posts__testimonials-box__text:before {
 	left: -23px;
 	top: -53px;
-}
+}*/
 .posts__testimonials-box__text {
 	padding: 4px 5px 15px 38px;
 	width: 93.75%;
@@ -1498,8 +1560,8 @@ header {
 .posts__blog__item--3 {
 	padding-top: 22px;  
 }
-.posts__blog__item:before {
-	left: 1px;
+.posts__blog__foto {
+    left: 0;
 }
 .posts__blog__theme {
 	height: 26px;
@@ -1547,12 +1609,14 @@ header {
 .container--footer {
 	 padding: 27px 20px 0;
 }
-.nav-footer {
+.footer-nav {
 	display: none;
 }
 .design {
 	display: block;
 	float: none;
+	position: relative;
 	text-align: center;
+	top: 0;
 }
 }
