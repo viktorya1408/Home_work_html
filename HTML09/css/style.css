@@ -221,8 +221,6 @@ header {
 .slider--aktiv {
 	background: url(../img/nav-hed.png) -22px 0 no-repeat;
 }
-
-
 #slid1:checked ~ #sl2,
 #slid3:checked ~ #sl2,
 #slid4:checked ~ #sl2 {

@@ -1,0 +1,42 @@
+.slider__navigation input {
+	display: inline-block;
+    height: 0;
+    position: relative;
+    width: 0;
+}
+.radio-buttton {
+	position: absolute;
+}
+#sl1 {
+	left: 3px;
+}
+#sl2 {
+	left: 23px;
+}
+#sl3 {
+	left: 45px;
+}
+#sl4 {
+	left: 68px;
+}
+.posts__testimonials-navig {	
+	position: relative;
+}
+.posts__testimonials-navig input {
+	display: inline-block;
+	height: 0;
+	position: relative;
+	width: 0;
+}
+#sl12 {
+	left: 0;
+}
+#sl22 {
+	left: 21px;
+}
+#sl32 {
+	left: 44px;
+}
+#sl42 {
+	left: 65px;
+}
